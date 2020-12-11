@@ -1,0 +1,214 @@
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 20px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 60%;
+
+  .logoWrapper {
+    display: flex;
+
+    .stylish {
+      font-weight: bold;
+    }
+
+    .logo {
+      padding-left: 4px;
+      color: #ea4f4c;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      opacity: 1;
+      list-style-type: none;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .parent {
+      padding: 0 10px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        color: #d31b7a;
+      }
+    }
+
+    .subnavigation {
+      display: none;
+      list-style-type: none;
+      width: 500px;
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      margin: auto;
+      transition: all 0.3s ease-in-out;
+
+      li a {
+        font-size: 17px;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+// .main {
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+//   nav {
+//     list-style: none;
+//     text-decoration: none;
+
+//     img {
+//       position: absolute;
+//       width: 80px;
+//       left: 12%;
+//     }
+
+//     ul {
+//       float: right;
+
+//       li {
+//         display: inline-block;
+//         line-height: 80px;
+//         margin: 0 15px;
+
+//         a {
+//           position: relative;
+//           color: #fff;
+//           font-size: 1.3rem;
+//           padding: 5px 0;
+//           text-transform: uppercase;
+
+//           &::before {
+//             position: absolute;
+//             content: "";
+//             left: 0;
+//             bottom: 0;
+//             height: 3px;
+//             width: 100%;
+//             background: #fff;
+//             transform: scaleX(0);
+//             transform-origin: right;
+//             transition: transform 0.4s linear;
+//           }
+
+//           &:hover::before {
+//             transform: scaleX(1);
+//             transform-origin: left;
+//           }
+//         }
+//       }
+//     }
+
+//     .burger {
+//       float: right;
+//       line-height: 80px;
+//       margin-right: 50%;
+//       display: none;
+//       cursor: pointer;
+//     }
+
+//     .cancel {
+//       float: right;
+//       line-height: 80px;
+//       margin-right: 40px;
+//       display: none;
+//       cursor: pointer;
+//     }
+//   }
+
+//   @media (max-width: 1118px) {
+//     nav {
+//       img {
+//         left: 8%;
+//       }
+//     }
+//   }
+
+//   @media (max-width: 944px) {
+//     nav {
+//       img {
+//         left: 6%;
+//         top: 20px;
+//         width: 80px;
+//       }
+//       ul {
+//         li {
+//           a {
+//             font-size: 17px;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   @media (max-width: 860px) {
+//     nav {
+//       img {
+//         display: none;
+//       }
+//       .burger {
+//         display: block;
+//       }
+//       ul {
+//         display: none;
+//         position: relative;
+//         width: 100%;
+//         height: 40vh;
+//         background: rgba(0, 0, 0, 0.5);
+//         top: 80px;
+//         left: -110%;
+//         text-align: center;
+//         transition: all 0.5s;
+
+//         li {
+//           display: block;
+//           margin: 50px 0;
+//           line-height: 30px;
+
+//           a {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+
+//       #check:checked ~ ul {
+//         left: 0%;
+//         display: block;
+//       }
+
+//       #check:checked ~ label .burger {
+//         display: none;
+//       }
+
+//       #check:checked ~ label .cancel {
+//         display: block;
+//       }
+//     }
+//   }
+// }
