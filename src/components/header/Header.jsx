@@ -1,7 +1,7 @@
 import React from "react";
 
 import Brand from "../../assets/final.png";
-import { FaHamburger, FaWindowClose } from "react-icons/fa";
+// import { FaHamburger, FaWindowClose } from "react-icons/fa";
 
 import "./header.scss";
 
