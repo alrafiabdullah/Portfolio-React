@@ -6,7 +6,7 @@ import {
   FaDev,
   FaInstagramSquare,
 } from "react-icons/fa";
-import "./footer.css";
+import "./footer.scss";
 
 function Footer() {
   return (
@@ -81,7 +81,7 @@ function Footer() {
           <br />© 2020 Copyright:
           <a
             style={{ color: "#d31b7a" }}
-            href="http://alrafi-portfolio.herokuapp.com"
+            href="https://abdullah-alrafi.netlify.app/"
           >
             {" "}
             Abdullah Al Rafi
