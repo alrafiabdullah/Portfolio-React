@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
-import "./App.css";
 import BG from "./assets/bg.webm";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+
+import "./App.css";
 
 export class App extends Component {
   render() {
@@ -11,7 +14,8 @@ export class App extends Component {
           <source src={BG} />
         </video>
         <div className="content">
-          <h1>Coming Soon!</h1>
+          <Header />
+          <Footer />
         </div>
       </div>
     );

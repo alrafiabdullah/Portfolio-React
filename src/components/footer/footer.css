@@ -1,0 +1,12 @@
+footer {
+  color: white;
+  border-top: 2px #d31b7a solid;
+}
+
+.footer-copyright {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
